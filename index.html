@@ -1,0 +1,934 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="login-modal">
+      <div class="login-box">
+        <i id="close-login" class="fa-solid fa-xmark"></i>
+        <h5>Login</h5>
+        <form>
+          <input id="email" type="text" placeholder="E-mail" />
+          <input id="password" type="password" placeholder="Password" />
+        </form>
+        <button><i class="fa-solid fa-right-to-bracket"></i>Login</button>
+      </div>
+    </div>
+    <header>
+      <div class="container">
+        <a class="logo" href="#"><img src="images/logo.png" alt="" /></a>
+
+        <div class="user">
+          <i id="burger-btn" class="fa-solid fa-bars"></i>
+          <div class="login">
+            <i class="fa-regular fa-user"></i>
+            <span>Login / Sign Up</span>
+          </div>
+          <button id="cart-btn">
+            <i class="fa-solid fa-cart-shopping"></i>&nbsp;Cart
+          </button>
+        </div>
+      </div>
+    </header>
+    <div class="container">
+      <main>
+        <div class="menu menu-desktop">
+          <h2>Menu</h2>
+          <ul class="menu-list">
+            <li><a href="#platters">platters</a></li>
+            <li><a href="#nigiri">nigiri</a></li>
+            <li><a href="#starters">starters</a></li>
+            <li><a href="#salads">salads</a></li>
+            <li><a href="#carpaccio">carpaccio</a></li>
+            <li><a href="#sashimi">sashimi</a></li>
+            <li><a href="#omakase-sushi">omakase sushi</a></li>
+            <li><a href="#sushi-sets">sushi sets</a></li>
+          </ul>
+        </div>
+        <div class="menu menu-mobile">
+          <h2>Menu</h2>
+          <i id="close-mobile-menu" class="fa-solid fa-xmark"></i>
+          <ul class="menu-list">
+            <li><a href="#platters">platters</a></li>
+            <li><a href="#nigiri">nigiri</a></li>
+            <li><a href="#starters">starters</a></li>
+            <li><a href="#salads">salads</a></li>
+            <li><a href="#carpaccio">carpaccio</a></li>
+            <li><a href="#sashimi">sashimi</a></li>
+            <li><a href="#omakase-sushi">omakase sushi</a></li>
+            <li><a href="#sushi-sets">sushi sets</a></li>
+          </ul>
+        </div>
+        <h1>Order Take Away Sushi</h1>
+        <div class="products" id="platters">
+          <div class="products-wrapper">
+            <h3>Platters</h3>
+            <div class="box">
+              <div class="product-photo">
+                <img src="images/Platters/img-1.jpg" alt="" />
+              </div>
+
+              <h2 class="product-name">Small Platter</h2>
+              <div class="product-description">
+                Spicy tuna roll (8 Pieces) Rainbow roll (8 Pieces)Salmon &
+                avocado roll (8 Pieces)Salmon nigiri (3 Pieces)Butterfish nigiri
+                (3 Pieces)Tuna nigiri (3 Pieces)Prawn nigiri (3 Pieces)
+              </div>
+              <h6 class="product-pices">36 Pieces</h6>
+
+              <div class="product-order-details">
+                <div class="quantity-buttons">
+                  <button class="minus" data-action="minus">-</button>
+                  <p class="quantity">1</p>
+                  <button class="plus" data-action="plus">+</button>
+                </div>
+                <div class="product-price">
+                  <p class="price">55 €</p>
+                </div>
+              </div>
+              <button class="add-button" add-to-cart>add</button>
+            </div>
+
+            <div class="box">
+              <div class="product-photo">
+                <img src="images/Platters/img-2.jpg" alt="" />
+              </div>
+
+              <h2 class="product-name">Medium Platter</h2>
+              <div class="product-description">
+                Spicy tuna roll (8 Pieces)Spicy Salmon roll (8 Pieces)Rainbow
+                roll (8 Pieces)California roll (8 Pieces)Salmon & Avocado roll
+                (8 Pieces)Tuna nigiri (5 pieces)Prawn nigiri (5
+                pieces)Butterfish nigiri (5 pieces)
+              </div>
+              <h6 class="product-pices">60 Pieces</h6>
+
+              <div class="product-order-details">
+                <div class="quantity-buttons">
+                  <button class="minus" data-action="minus">-</button>
+                  <p class="quantity">1</p>
+                  <button class="plus" data-action="plus">+</button>
+                </div>
+                <div class="product-price">
+                  <p class="price">85 €</p>
+                </div>
+              </div>
+              <button class="add-button" add-to-cart>add</button>
+            </div>
+
+            <div class="box">
+              <div class="product-photo">
+                <img src="images/Platters/img-3.jpg" alt="" />
+              </div>
+
+              <h2 class="product-name">Veggie Platter</h2>
+              <div class="product-description">
+                Sweet potato & avocado roll (8 Pieces) Veggie Special roll (8
+                Pieces) Kappa Maki (8 Pieces) Sweet Potato (8 Pieces) Avocado
+                Maki (8 Pieces) Asparagus nigiris (4pieces) Shiitake
+              </div>
+              <h6 class="product-pices">46 Pieces</h6>
+
+              <div class="product-order-details">
+                <div class="quantity-buttons">
+                  <button class="minus" data-action="minus">-</button>
+                  <p class="quantity">1</p>
+                  <button class="plus" data-action="plus">+</button>
+                </div>
+                <div class="product-price">
+                  <p class="price">56 €</p>
+                </div>
+              </div>
+              <button class="add-button" add-to-cart>add</button>
+            </div>
+
+            <div class="box">
+              <div class="product-photo">
+                <img src="images/Platters/img-4.jpg" alt="" />
+              </div>
+
+              <h2 class="product-name">Maki Platter</h2>
+              <div class="product-description">
+                Spicy salmon Roll (16 pieces) California Roll (16 pieces) Veggie
+                Special (16 pieces) Spicy tuna (16 pieces) Salmon Avocado (16
+                pieces)
+              </div>
+              <h6 class="product-pices">80 Pieces</h6>
+
+              <div class="product-order-details">
+                <div class="quantity-buttons">
+                  <button class="minus" data-action="minus">-</button>
+                  <p class="quantity">1</p>
+                  <button class="plus" data-action="plus">+</button>
+                </div>
+                <div class="product-price">
+                  <p class="price">95 €</p>
+                </div>
+              </div>
+              <button class="add-button" add-to-cart>add</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="products" id="nigiri">
+          <div class="products-wrapper">
+            <h3>Nigiri</h3>
+            <div class="box">
+              <div class="product-photo">
+                <img src="images/Nigiri/img-1.png" alt="" />
+              </div>
+
+              <h2 class="product-name">Maguro</h2>
+              <div class="product-description">Nigiri with yellowfin tuna</div>
+              <h6 class="product-pices">2 Pieces</h6>
+
+              <div class="product-order-details">
+                <div class="quantity-buttons">
+                  <button class="minus" data-action="minus">-</button>
+                  <p class="quantity">1</p>
+                  <button class="plus" data-action="plus">+</button>
+                </div>
+                <div class="product-price">
+                  <p class="price">6.60 €</p>
+                </div>
+              </div>
+              <button class="add-button" add-to-cart>add</button>
+            </div>
+
+            <div class="box">
+              <div class="product-photo">
+                <img src="images/Nigiri/img-2.png" alt="" />
+              </div>
+
+              <h2 class="product-name">Ebi</h2>
+              <div class="product-description">Nigiri with shrimp</div>
+              <h6 class="product-pices">2 Pieces</h6>
+
+              <div class="product-order-details">
+                <div class="quantity-buttons">
+                  <button class="minus" data-action="minus">-</button>
+                  <p class="quantity">1</p>
+                  <button class="plus" data-action="plus">+</button>
+                </div>
+                <div class="product-price">
+                  <p class="price">6.20 €</p>
+                </div>
+              </div>
+              <button class="add-button" add-to-cart>add</button>
+            </div>
+
+            <div class="box">
+              <div class="product-photo">
+                <img src="images/Nigiri/img-3.png" alt="" />
+              </div>
+
+              <h2 class="product-name">Abokado</h2>
+              <div class="product-description">
+                Nigiri with avocado, yuzu-kosho & sesame
+              </div>
+              <h6 class="product-pices">2 Pieces</h6>
+
+              <div class="product-order-details">
+                <div class="quantity-buttons">
+                  <button class="minus" data-action="minus">-</button>
+                  <p class="quantity">1</p>
+                  <button class="plus" data-action="plus">+</button>
+                </div>
+                <div class="product-price">
+                  <p class="price">5.00 €</p>
+                </div>
+              </div>
+              <button class="add-button" add-to-cart>add</button>
+            </div>
+
+            <div class="box">
+              <div class="product-photo">
+                <img src="images/Nigiri/img-4.png" alt="" />
+              </div>
+
+              <h2 class="product-name">Shake</h2>
+              <div class="product-description">Nigiri with salmon</div>
+              <h6 class="product-pices">2 Pieces</h6>
+
+              <div class="product-order-details">
+                <div class="quantity-buttons">
+                  <button class="minus" data-action="minus">-</button>
+                  <p class="quantity">1</p>
+                  <button class="plus" data-action="plus">+</button>
+                </div>
+                <div class="product-price">
+                  <p class="price">5.20 €</p>
+                </div>
+              </div>
+              <button class="add-button" add-to-cart>add</button>
+            </div>
+
+            <div class="box">
+              <div class="product-photo">
+                <img src="images/Nigiri/img-5.png" alt="" />
+              </div>
+
+              <h2 class="product-name">Shake Yaki</h2>
+              <div class="product-description">
+                Nigiri with seared salmon, sansho pepper & tsume soy
+              </div>
+              <h6 class="product-pices">2 Pieces</h6>
+
+              <div class="product-order-details">
+                <div class="quantity-buttons">
+                  <button class="minus" data-action="minus">-</button>
+                  <p class="quantity">1</p>
+                  <button class="plus" data-action="plus">+</button>
+                </div>
+                <div class="product-price">
+                  <p class="price">5.40 €</p>
+                </div>
+              </div>
+              <button class="add-button" add-to-cart>add</button>
+            </div>
+
+            <div class="box">
+              <div class="product-photo">
+                <img src="images/Nigiri/img-6.png" alt="" />
+              </div>
+
+              <h2 class="product-name">Hiramasa Yaki</h2>
+              <div class="product-description">
+                Nigiri with seared yellowtail kingfish
+              </div>
+              <h6 class="product-pices">1 Pieces</h6>
+
+              <div class="product-order-details">
+                <div class="quantity-buttons">
+                  <button class="minus" data-action="minus">-</button>
+                  <p class="quantity">1</p>
+                  <button class="plus" data-action="plus">+</button>
+                </div>
+                <div class="product-price">
+                  <p class="price">7.20 €</p>
+                </div>
+              </div>
+              <button class="add-button" add-to-cart>add</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="products" id="starters">
+          <div class="products-wrapper">
+            <h3>Starters</h3>
+            <div class="box">
+              <div class="product-photo">
+                <img src="images/Starters/img-1.jpg" alt="" />
+              </div>
+
+              <h2 class="product-name">Salmon & White Fish Tartare</h2>
+              <div class="product-description">
+                Chopped white fish with pickled cucumber, tobiko, lotus chips
+                and japanese tartar sauce ALLERGY: fish : gluten: mustard
+              </div>
+              <h6 class="product-pices">1 Pieces</h6>
+
+              <div class="product-order-details">
+                <div class="quantity-buttons">
+                  <button class="minus" data-action="minus">-</button>
+                  <p class="quantity">1</p>
+                  <button class="plus" data-action="plus">+</button>
+                </div>
+                <div class="product-price">
+                  <p class="price">12 €</p>
+                </div>
+              </div>
+              <button class="add-button" add-to-cart>add</button>
+            </div>
+
+            <div class="box">
+              <div class="product-photo">
+                <img src="images/Starters/img-2.jpg" alt="" />
+              </div>
+
+              <h2 class="product-name">Scallop & Aasparagus</h2>
+              <div class="product-description">
+                Seard scallop and steamed asparagus served with yuzu-basil miso
+                ALLERGY: gluten : egg : crustaceans : fish : soya
+              </div>
+              <h6 class="product-pices">1 Pieces</h6>
+
+              <div class="product-order-details">
+                <div class="quantity-buttons">
+                  <button class="minus" data-action="minus">-</button>
+                  <p class="quantity">1</p>
+                  <button class="plus" data-action="plus">+</button>
+                </div>
+                <div class="product-price">
+                  <p class="price">16 €</p>
+                </div>
+              </div>
+              <button class="add-button" add-to-cart>add</button>
+            </div>
+
+            <div class="box">
+              <div class="product-photo">
+                <img src="images/Starters/img-3.jpg" alt="" />
+              </div>
+
+              <h2 class="product-name">Tuna Tataki</h2>
+              <div class="product-description">
+                Mixed pan-fried tuna with truffle butter and fresh wasabi
+                ALLERGY: gluten : fish : soya : milk
+              </div>
+              <h6 class="product-pices">1 Pieces</h6>
+
+              <div class="product-order-details">
+                <div class="quantity-buttons">
+                  <button class="minus" data-action="minus">-</button>
+                  <p class="quantity">1</p>
+                  <button class="plus" data-action="plus">+</button>
+                </div>
+                <div class="product-price">
+                  <p class="price">25 €</p>
+                </div>
+              </div>
+              <button class="add-button" add-to-cart>add</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="products" id="salads">
+          <div class="products-wrapper">
+            <h3>Salads</h3>
+            <div class="box">
+              <div class="product-photo">
+                <img src="images/Salads/img-1.png" alt="" />
+              </div>
+
+              <h2 class="product-name">Jungle Fish</h2>
+              <div class="product-description">
+                Grilled salmon, shrimp and seared tuna on a salad of green
+                leaves, red cabbage, quinoa, tomatoes, edamame, avocado, radish,
+                broccoli & sesame – topped with lotus chips & miso-mustard
+                dressing.
+              </div>
+              <h6 class="product-pices">1 Piece</h6>
+
+              <div class="product-order-details">
+                <div class="quantity-buttons">
+                  <button class="minus" data-action="minus">-</button>
+                  <p class="quantity">1</p>
+                  <button class="plus" data-action="plus">+</button>
+                </div>
+                <div class="product-price">
+                  <p class="price">19 €</p>
+                </div>
+              </div>
+              <button class="add-button" add-to-cart>add</button>
+            </div>
+
+            <div class="box">
+              <div class="product-photo">
+                <img src="images/Salads/img-2.png" alt="" />
+              </div>
+
+              <h2 class="product-name">Green Bird</h2>
+              <div class="product-description">
+                Marinated chicken and soy egg on a salad of green leaves, red
+                cabbage, quinoa, tomatoes, edamame, avocado, radish, broccoli &
+                sesame
+              </div>
+              <h6 class="product-pices">1 Piece</h6>
+
+              <div class="product-order-details">
+                <div class="quantity-buttons">
+                  <button class="minus" data-action="minus">-</button>
+                  <p class="quantity">1</p>
+                  <button class="plus" data-action="plus">+</button>
+                </div>
+                <div class="product-price">
+                  <p class="price">18 €</p>
+                </div>
+              </div>
+              <button class="add-button" add-to-cart>add</button>
+            </div>
+            <div class="box">
+              <div class="product-photo">
+                <img src="images/Salads/img-3.png" alt="" />
+              </div>
+
+              <h2 class="product-name">Green Gate</h2>
+              <div class="product-description">
+                Grilled sweet potato, avocado, cauliflower and portobello
+                mushroom on a salad of green leaves, red cabbage, quinoa,
+                tomatoes, edamame, radish, broccoli and sesame – topped with
+                goma and jerusalem artichoke chips.
+              </div>
+              <h6 class="product-pices">1 Piece</h6>
+
+              <div class="product-order-details">
+                <div class="quantity-buttons">
+                  <button class="minus" data-action="minus">-</button>
+                  <p class="quantity">1</p>
+                  <button class="plus" data-action="plus">+</button>
+                </div>
+                <div class="product-price">
+                  <p class="price">17 €</p>
+                </div>
+              </div>
+              <button class="add-button" add-to-cart>add</button>
+            </div>
+
+            <div class="box">
+              <div class="product-photo">
+                <img src="images/Salads/img-4.png" alt="" />
+              </div>
+
+              <h2 class="product-name">Osaka Chaos</h2>
+              <div class="product-description">
+                Salmon, tuna, shrimp, tamago, avocado, shiitake, snow peas,
+                trout roe, shiso & sushi rice.
+              </div>
+              <h6 class="product-pices">1 Piece</h6>
+
+              <div class="product-order-details">
+                <div class="quantity-buttons">
+                  <button class="minus" data-action="minus">-</button>
+                  <p class="quantity">1</p>
+                  <button class="plus" data-action="plus">+</button>
+                </div>
+                <div class="product-price">
+                  <p class="price">18 €</p>
+                </div>
+              </div>
+              <button class="add-button" add-to-cart>add</button>
+            </div>
+            <div class="box">
+              <div class="product-photo">
+                <img src="images/Salads/img-5.png" alt="" />
+              </div>
+
+              <h2 class="product-name">Osaka Chaos</h2>
+              <div class="product-description">
+                Salmon, avocado, snow peas, edamame, pickled red onion, sushi
+                rice & poké sauce
+              </div>
+              <h6 class="product-pices">1 Piece</h6>
+
+              <div class="product-order-details">
+                <div class="quantity-buttons">
+                  <button class="minus" data-action="minus">-</button>
+                  <p class="quantity">1</p>
+                  <button class="plus" data-action="plus">+</button>
+                </div>
+                <div class="product-price">
+                  <p class="price">15 €</p>
+                </div>
+              </div>
+              <button class="add-button" add-to-cart>add</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="products" id="carpaccio">
+          <div class="products-wrapper">
+            <h3>Carpaccio</h3>
+            <div class="box">
+              <div class="product-photo">
+                <img src="images/Carpaccio/img-1.jpg" alt="" />
+              </div>
+
+              <h2 class="product-name">Butterfish Carpaccio</h2>
+              <div class="product-description">
+                Seared butterfish and foie gras served with cress and veg chips
+                ALLERGY: gluten : soya
+              </div>
+              <h6 class="product-pices">1 Pieces</h6>
+
+              <div class="product-order-details">
+                <div class="quantity-buttons">
+                  <button class="minus" data-action="minus">-</button>
+                  <p class="quantity">1</p>
+                  <button class="plus" data-action="plus">+</button>
+                </div>
+                <div class="product-price">
+                  <p class="price">20 €</p>
+                </div>
+              </div>
+              <button class="add-button" add-to-cart>add</button>
+            </div>
+
+            <div class="box">
+              <div class="product-photo">
+                <img src="images/Carpaccio/img-2.jpg" alt="" />
+              </div>
+
+              <h2 class="product-name">Scallop And Sweet Shrimp Carpaccio</h2>
+              <div class="product-description">
+                With yuzu lemon dressing, miyoga and coriander cress ALLERGY:
+                fish
+              </div>
+              <h6 class="product-pices">1 Pieces</h6>
+
+              <div class="product-order-details">
+                <div class="quantity-buttons">
+                  <button class="minus" data-action="minus">-</button>
+                  <p class="quantity">1</p>
+                  <button class="plus" data-action="plus">+</button>
+                </div>
+                <div class="product-price">
+                  <p class="price">18 €</p>
+                </div>
+              </div>
+              <button class="add-button" add-to-cart>add</button>
+            </div>
+
+            <div class="box">
+              <div class="product-photo">
+                <img src="images/Carpaccio/img-3.jpg" alt="" />
+              </div>
+
+              <h2 class="product-name">Wagyu Carpaccio</h2>
+              <div class="product-description">
+                Seared wagyu beef with marinated wasabi, ginger-ponzu jelly and
+                miyoga ALLERGY: gluten : soya
+              </div>
+              <h6 class="product-pices">1 Pieces</h6>
+
+              <div class="product-order-details">
+                <div class="quantity-buttons">
+                  <button class="minus" data-action="minus">-</button>
+                  <p class="quantity">1</p>
+                  <button class="plus" data-action="plus">+</button>
+                </div>
+                <div class="product-price">
+                  <p class="price">25 €</p>
+                </div>
+              </div>
+              <button class="add-button" add-to-cart>add</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="products" id="sashimi">
+          <div class="products-wrapper">
+            <h3>Sashimi</h3>
+            <div class="box">
+              <div class="product-photo">
+                <img src="images/Sashimi/img-1.png" alt="" />
+              </div>
+
+              <h2 class="product-name">Shake Sashimi</h2>
+              <div class="product-description">
+                Salmon sashimi with supreme soy & wasabi
+              </div>
+              <h6 class="product-pices">5 Pieces</h6>
+
+              <div class="product-order-details">
+                <div class="quantity-buttons">
+                  <button class="minus" data-action="minus">-</button>
+                  <p class="quantity">1</p>
+                  <button class="plus" data-action="plus">+</button>
+                </div>
+                <div class="product-price">
+                  <p class="price">8 €</p>
+                </div>
+              </div>
+              <button class="add-button" add-to-cart>add</button>
+            </div>
+
+            <div class="box">
+              <div class="product-photo">
+                <img src="images/Sashimi/img-2.png" alt="" />
+              </div>
+
+              <h2 class="product-name">Maguro Sashimi</h2>
+              <div class="product-description">
+                Tuna sashimi with supreme soy & wasabi
+              </div>
+              <h6 class="product-pices">5 Pieces</h6>
+
+              <div class="product-order-details">
+                <div class="quantity-buttons">
+                  <button class="minus" data-action="minus">-</button>
+                  <p class="quantity">1</p>
+                  <button class="plus" data-action="plus">+</button>
+                </div>
+                <div class="product-price">
+                  <p class="price">10 €</p>
+                </div>
+              </div>
+              <button class="add-button" add-to-cart>add</button>
+            </div>
+
+            <div class="box">
+              <div class="product-photo">
+                <img src="images/Sashimi/img-3.png" alt="" />
+              </div>
+
+              <h2 class="product-name">Hiramasa Sashimi</h2>
+              <div class="product-description">
+                Yellowtail kingfish sashimi with supreme soy & wasabi
+              </div>
+              <h6 class="product-pices">5 Pieces</h6>
+
+              <div class="product-order-details">
+                <div class="quantity-buttons">
+                  <button class="minus" data-action="minus">-</button>
+                  <p class="quantity">1</p>
+                  <button class="plus" data-action="plus">+</button>
+                </div>
+                <div class="product-price">
+                  <p class="price">14 €</p>
+                </div>
+              </div>
+              <button class="add-button" add-to-cart>add</button>
+            </div>
+
+            <div class="box">
+              <div class="product-photo">
+                <img src="images/Sashimi/img-4.png" alt="" />
+              </div>
+
+              <h2 class="product-name">Sashimi Mix</h2>
+              <div class="product-description"></div>
+              <h6 class="product-pices">9 Pieces</h6>
+
+              <div class="product-order-details">
+                <div class="quantity-buttons">
+                  <button class="minus" data-action="minus">-</button>
+                  <p class="quantity">1</p>
+                  <button class="plus" data-action="plus">+</button>
+                </div>
+                <div class="product-price">
+                  <p class="price">20 €</p>
+                </div>
+              </div>
+              <button class="add-button" add-to-cart>add</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="products" id="omakase-sushi">
+          <div class="products-wrapper">
+            <h3>Omakase Sushi</h3>
+            <div class="box">
+              <div class="product-photo">
+                <img src="images/Omakase-Sushi/img-1.jpg" alt="" />
+              </div>
+
+              <h2 class="product-name">Nigiri Sushi</h2>
+              <h6 class="product-pices">6 Pieces</h6>
+
+              <div class="product-order-details">
+                <div class="quantity-buttons">
+                  <button class="minus" data-action="minus">-</button>
+                  <p class="quantity">1</p>
+                  <button class="plus" data-action="plus">+</button>
+                </div>
+                <div class="product-price">
+                  <p class="price">23 €</p>
+                </div>
+              </div>
+              <button class="add-button" add-to-cart>add</button>
+            </div>
+
+            <div class="box">
+              <div class="product-photo">
+                <img src="images/Omakase-Sushi/img-2.jpg" alt="" />
+              </div>
+
+              <h2 class="product-name">Nigiri Sushi</h2>
+              <h6 class="product-pices">9 Pieces</h6>
+
+              <div class="product-order-details">
+                <div class="quantity-buttons">
+                  <button class="minus" data-action="minus">-</button>
+                  <p class="quantity">1</p>
+                  <button class="plus" data-action="plus">+</button>
+                </div>
+                <div class="product-price">
+                  <p class="price">32 €</p>
+                </div>
+              </div>
+              <button class="add-button" add-to-cart>add</button>
+            </div>
+
+            <div class="box">
+              <div class="product-photo">
+                <img src="images/Omakase-Sushi/img-3.jpg" alt="" />
+              </div>
+
+              <h2 class="product-name">Nigiri Sushi</h2>
+              <h6 class="product-pices">12 Pieces</h6>
+
+              <div class="product-order-details">
+                <div class="quantity-buttons">
+                  <button class="minus" data-action="minus">-</button>
+                  <p class="quantity">1</p>
+                  <button class="plus" data-action="plus">+</button>
+                </div>
+                <div class="product-price">
+                  <p class="price">39 €</p>
+                </div>
+              </div>
+              <button class="add-button" add-to-cart>add</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="products" id="sushi-sets">
+          <div class="products-wrapper">
+            <h3>Sushi Sets</h3>
+            <div class="box">
+              <div class="product-photo">
+                <img src="images/Sushi-Sets/img-1.jpg" alt="" />
+              </div>
+
+              <h2 class="product-name">Salmon Set</h2>
+              <div class="product-description">
+                1 salmon avocado roll(8pc) and 5 salmon nigiri ALLERGY: egg :
+                sesame : fish : soya
+              </div>
+              <h6 class="product-pices">13 Pieces</h6>
+
+              <div class="product-order-details">
+                <div class="quantity-buttons">
+                  <button class="minus" data-action="minus">-</button>
+                  <p class="quantity">1</p>
+                  <button class="plus" data-action="plus">+</button>
+                </div>
+                <div class="product-price">
+                  <p class="price">20 €</p>
+                </div>
+              </div>
+              <button class="add-button" add-to-cart>add</button>
+            </div>
+
+            <div class="box">
+              <div class="product-photo">
+                <img src="images/Sushi-Sets/img-2.jpg" alt="" />
+              </div>
+
+              <h2 class="product-name">Yellowtail Set</h2>
+              <div class="product-description">
+                1 yellowtail, spring onion and garlic truffle mayo roll(8pc) and
+                5 yellowtail nigiri 5 ALLERGY: gluten : egg : sesame :
+                crustacean : fish : soya
+              </div>
+              <h6 class="product-pices">13 Pieces</h6>
+
+              <div class="product-order-details">
+                <div class="quantity-buttons">
+                  <button class="minus" data-action="minus">-</button>
+                  <p class="quantity">1</p>
+                  <button class="plus" data-action="plus">+</button>
+                </div>
+                <div class="product-price">
+                  <p class="price">24 €</p>
+                </div>
+              </div>
+              <button class="add-button" add-to-cart>add</button>
+            </div>
+
+            <div class="box">
+              <div class="product-photo">
+                <img src="images/Sushi-Sets/img-3.jpg" alt="" />
+              </div>
+
+              <h2 class="product-name">Mixed Sushi Set</h2>
+              <div class="product-description">
+                1 california roll ( 8pc) , 3 salmon and 2 tuna nigiri ALLERGY:
+                gluten : egg : crustacean : fish
+              </div>
+              <h6 class="product-pices">13 Pieces</h6>
+
+              <div class="product-order-details">
+                <div class="quantity-buttons">
+                  <button class="minus" data-action="minus">-</button>
+                  <p class="quantity">1</p>
+                  <button class="plus" data-action="plus">+</button>
+                </div>
+                <div class="product-price">
+                  <p class="price">22 €</p>
+                </div>
+              </div>
+              <button class="add-button" add-to-cart>add</button>
+            </div>
+
+            <div class="box">
+              <div class="product-photo">
+                <img src="images/Sushi-Sets/img-4.jpg" alt="" />
+              </div>
+
+              <h2 class="product-name">Tuna Set</h2>
+              <div class="product-description">
+                1 spicy tuna roll( 8pc) and 5 tuna nigiri ALLERGY: gluten : egg
+                : fish
+              </div>
+              <h6 class="product-pices">13 Pieces</h6>
+
+              <div class="product-order-details">
+                <div class="quantity-buttons">
+                  <button class="minus" data-action="minus">-</button>
+                  <p class="quantity">1</p>
+                  <button class="plus" data-action="plus">+</button>
+                </div>
+                <div class="product-price">
+                  <p class="price">25 €</p>
+                </div>
+              </div>
+              <button class="add-button" add-to-cart>add</button>
+            </div>
+
+            <div class="box">
+              <div class="product-photo">
+                <img src="images/Sushi-Sets/img-5.jpg" alt="" />
+              </div>
+
+              <h2 class="product-name">Deluxe Set</h2>
+              <div class="product-description">
+                2 otoro and 3 butterfish nigiri and a negitoro maki ALLERGY:
+                gluten : fish : soya
+              </div>
+              <h6 class="product-pices">11 Pieces</h6>
+
+              <div class="product-order-details">
+                <div class="quantity-buttons">
+                  <button class="minus" data-action="minus">-</button>
+                  <p class="quantity">1</p>
+                  <button class="plus" data-action="plus">+</button>
+                </div>
+                <div class="product-price">
+                  <p class="price">27 €</p>
+                </div>
+              </div>
+              <button class="add-button" add-to-cart>add</button>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <div class="order-box">
+      <i id="close-btn" class="fa-solid fa-xmark"></i>
+      <p class="total">Total: 0 €</p>
+      <h3>Complete order</h3>
+
+      <input type="text" placeholder="Your phone number" />
+      <button class="order-btn" type="submit">Order</button>
+      <hr />
+    </div>
+    <script src="js/login.js"></script>
+    <script src="js/order.js"></script>
+    <script src="js/cart.js"></script>
+  </body>
+</html>
